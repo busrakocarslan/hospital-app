@@ -1,0 +1,102 @@
+.gridCon {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  justify-content: space-around;
+  gap: 1rem;
+  font-family: "Playfair Display SC", serif;
+  font-weight: 400;
+  font-style: italic;
+  
+  & .imgCon {
+    max-width: 90vh;
+    margin: auto;
+    /* border: 2px solid red; */
+    width: 250px;
+    text-align: center;
+    & img {
+      width: 100%;
+      border:8px solid transparent;
+      padding: 10px;
+      border-image: url(../../../public/img/floral-2622312_1280.jpg) 20 round;
+      border-radius: 50%;
+      transition: all .3s ease-in-out;
+      &:hover{
+        transform: scale(.9,1);
+        cursor: pointer;
+      }
+    }
+  }
+}
+.modalBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  & .modalContent {
+    background-color: #fff;    
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    /* height: 300px; */
+    line-height: 1.5rem;
+    & .head{
+      border-bottom: 2px solid lightgray;
+    }
+    & form {
+      text-align: left;
+      & input{
+        border: 1px solid #dee2e6;
+        display: block;
+        padding-right: 15rem;
+        height: 2rem;
+        appearance: none;
+        outline: none;
+        border-radius: 10px;
+        margin-top:.5rem ;
+        
+
+        
+
+      }
+      & .date::-webkit-inner-spin-button{/* inputta görünen şekli değiştmeye çalışıyorsun*/
+        -webkit-appearance: none;
+        /* display: flex; */
+        text-align: end;
+       
+        
+      }
+      & .buttons{
+        /* border: 2px solid red; */
+        text-align: center;
+        margin: 1rem;
+        & button{
+          padding: .5rem;
+          margin-left: 1rem;
+          border-radius: 10%;
+          border: none;
+          background-color: cadetblue;
+          color: black;
+          cursor: pointer;
+          &:last-child{
+            background-color: rgba(230, 7, 7, 0.933);
+            color: #fff;
+          }
+        }
+        
+      }
+    }
+ 
+  }
+
+
+}
+

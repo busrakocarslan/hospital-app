@@ -1,0 +1,25 @@
+.appCon{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 1rem auto;
+  position: relative;
+  padding: .5rem;
+  background-image: linear-gradient(to right, #fa709a 0%, #fee140e0 100%);
+  box-shadow: 5px 5px 15px black;
+  border-radius: 10px;
+  .abs{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(79, 39, 117, 0.714);
+    border-radius: 20%;
+    padding: .1rem;
+    z-index: 2;
+    color: mediumaquamarine;
+  }
+  
+}
